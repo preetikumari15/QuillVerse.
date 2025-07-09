@@ -30,7 +30,7 @@ const Dashboard = () => {
     data.append("image", formData.image);
     try {
       const res = await axios.post(
-        "http://localhost:4000/blog/create",
+        "https://quillverse.onrender.com/blog/create",
         formData,
         {
           headers: {
