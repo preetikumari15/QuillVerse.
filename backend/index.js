@@ -9,7 +9,11 @@ import blogRoutes from './routes/blog.routes.js';
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: 'https://quill-verse.vercel.app',
+    }
+));
 
 //API ENDPOINTS
 app.use("/images", express.static("uploads"));
